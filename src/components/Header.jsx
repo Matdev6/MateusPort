@@ -28,7 +28,7 @@ const Header = () => {
                         <button
                             key={section.id}
                             onClick={() => scrollToSection(section.id)}
-                            className="text-lg hover:text-gray-700 transition  duration-400">
+                            className="text-lg hover:text-gray-700  transition  duration-400">
                             {section.label}
                         </button>
                     ))}
