@@ -38,14 +38,14 @@ const Skills = () => {
                 </div>
                 <div className="w-1/2 ">
                     <div className=" w-2/3 h-1/3 grid grid-cols-4 mt-40 gap-x-20 gap-y-8">
-                        {cards.map((card) => (
+                        {cards.map((card, index) => (
                             <motion.div
                                 initial={{ x: -500, opacity: 0 }}
                                 whileInView={{ x: 0, opacity: 1}}
                                 transition={{ duration: 1.2 }}
                                 whileHover={{ scale: 1.2 }}
                                 whileTap={{ scale: 0.7}}
-                                key={card.index}
+                                key={index}
                                 className="w-40 h-40 shadow-2xlxl bg-secundary rounded-lg flex cursor-pointer"
                                 onMouseEnter={() => handleMouseEnter(card.info)}
                                 onMouseLeave={handleMouseLeave}

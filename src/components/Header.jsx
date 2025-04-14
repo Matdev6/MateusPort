@@ -1,8 +1,9 @@
+import { Menu } from "lucide-react";
 import logo from "../assets/logo.jpg"
 
 const Header = () => {
     const sections = [
-        { id: "section1", label: "inicio" },
+        { id: "section1", label: "Inicio" },
         { id: "section2", label: "Sobre mim" },
         { id: "section3", label: "Habilidades" },
         { id: "section4", label: "Projetos" },
@@ -18,9 +19,9 @@ const Header = () => {
 
     return (
         <div>
-            <header className="flex w-screen justify-around items-center  py-2 shadow-lg font-semibold bg-secundary h-20 fixed top-0 left-0 z-50">
+            <header className="flex w-screen justify-around items-center  py-2 shadow-lg font-semibold bg-neutral-900 h-20 fixed top-0 left-0 z-50">
                 <div className="flex items-center gap-2">
-                    <img src={logo} alt="logo" className="h-14 rounded-lg" />
+                    <Menu className="text-neutral-50 w-8 h-8" />
                     <h1 className="items-center font-semibold text-lg"></h1>
                 </div>
                 <div className="flex  justify-between w-1/3 text-white">

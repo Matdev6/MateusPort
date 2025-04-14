@@ -10,6 +10,9 @@ export default {
         primary: '#3D5D5C', // Nome da variável para a cor
         secundary: '#9AA49C'
       },
+      backgroundImage: {
+        'radial' : 'radial-gradient(var(--tw-gradient-stops))',
+      },
       
       fontFamily: {
         sans: ['Poppins', 'Arial', 'sans-serif'],
