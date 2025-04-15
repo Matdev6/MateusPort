@@ -28,7 +28,7 @@ const Skills = () => {
     ]
 
     return (
-        <section className="altura-tela scroll-mt-20  w-screen bg-primary" id="section3">
+        <section className="altura-tela scroll-mt-20  w-screen bg-neutral-950" id="section3">
             <div className=" flex  altura-tela flex-col lg:flex-row ">
                 <div className=" h-full  w-1/2">
                     <div className="text-white font-medium flex flex-col  w-96 mx-auto mt-40">

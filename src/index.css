@@ -24,3 +24,9 @@
   width: 100vw; /* Define a largura como 100% da largura da viewport */
   height: calc(100vh - 80px); /* Define a altura como 100% da altura da viewport */
 }
+
+
+.fundo{
+  background: linear-gradient(270deg, #1f1f1f, #2e2e2e, #1f1f1f);
+  animation: pulseGradient 10s infinite linear;
+}
