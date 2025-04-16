@@ -1,7 +1,9 @@
 import { Cpu, LucideLaptop, Gamepad, Brain } from "lucide-react";
 import { motion } from "motion/react";
 
-const About = () => {
+
+export default function About() {
+  
   return (
     <section
       id="section2"
@@ -76,7 +78,7 @@ const About = () => {
             </div>
             <div className="my-auto">
               <h1 className="text-neutral-50 mt-2">
-              Gosto de ouvir o cliente e entender o que ele precisa antes de começar. Prezo por entregar algo que além de bonito, funcione bem e seja fácil de usar. Cada projeto é uma oportunidade de evoluir.
+                Gosto de ouvir o cliente e entender o que ele precisa antes de começar. Prezo por entregar algo que além de bonito, funcione bem e seja fácil de usar. Cada projeto é uma oportunidade de evoluir.
               </h1>
             </div>
           </motion.div>
@@ -87,4 +89,4 @@ const About = () => {
   );
 };
 
-export default About;
+

@@ -2,15 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* Define a fonte global */
 * {
   font-family: 'Poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 .altura-tela {
   height: calc(100vh - 80px);

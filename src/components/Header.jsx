@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu } from "lucide-react";
-import logo from "../assets/logo.jpg";
+
 
 const Header = () => {
     const [activeSection, setActiveSection] = useState(null);
