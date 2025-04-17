@@ -34,7 +34,7 @@ export default function Hero() {
     return (
         <section
             id="section1"
-            className="h-[calc(100vh-80px)] fund mt-20 scroll-mt-20 w-full bg-radial from-[#394753] via-[#141b20] to-[#1A1B21] flex flex-col sm:flex-row items-center sm:justify-center relative justify-around"
+            className="h-[calc(100vh-80px)] fund mt-20 scroll-mt-20 w-full bg-radial from-[#394753] via-neutral-900 to-neutral-950 flex flex-col sm:flex-row items-center sm:justify-center relative justify-around"
         >
             <motion.div
                 initial={{ x: -300, opacity: 0 }}
@@ -57,8 +57,8 @@ export default function Hero() {
                     onClick={scrollToSection} />
             </motion.div>
             <div className="sm:w-1/3 w-11/12 h-1/2  flex flex-col m">
-                <h1 className="text-neutral-100 font-bold sm:text-3xl text-xl mt-12 text-center sm:text-start">Transformando Ideias em Experiências Web Incríveis</h1> 
-                <p className="text-neutral-300 sm:text-xl text-md text-center sm:text-start">Desenvolvedor Front-End com foco em criar interfaces web responsivas e dinâmicas. Dedicado a entregar soluções que combinam estética e funcionalidade para uma ótima experiência do usuário.</p>
+                <h1 className="text-neutral-100 font-bold sm:text-4xl text-2xl mt-8 sm:mt-0 text-center sm:text-start">Transformando Ideias em Experiências Web Incríveis</h1> 
+                <p className="text-neutral-300 sm:text-2xl text-lg text-center sm:text-start">Desenvolvedor Front-End com foco em criar interfaces web responsivas e dinâmicas. Dedicado a entregar soluções que combinam estética e funcionalidade para uma ótima experiência do usuário.</p>
                 <div className="flex  sm:flex-row gap-2   mt-2 sm:mt-0 mx-auto sm:mx-0">
                     <div className="flex mt-2 bg-neutral-800   px-2 rounded-xl shadow-xl ">
                         <Code className="text-white" />
