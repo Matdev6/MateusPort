@@ -5,20 +5,18 @@ export default function Projects() {
     return (
         <section
             id="section4"
-            className="altura-tela w-screen scroll-mt-20 bg-neutral-950  overflow-hidden flex flex-col  items-center "
+            className="altura-tela w-screen scroll-mt-20 bg-svg  overflow-hidden flex flex-col  items-center "
         >
 
             {/* CONTEÚDO */}
-            <div className='flex '>
-                <h1 className="my-12 text-3xl font-semibold text-neutral-100">
-                    Sinta-se à vontade para dar uma conferida nos meus projetos.
+            <div className='flex w-full '>
+                <h1 className="my-12 text-2xl sm:text-2xl w-3/6 flex justify-center  md:text-3xl font-bold text-[]">
+                    Confira Meus Projetos
                 </h1>
             </div>
-            <div className='mt-10'>
-               <Slider />
+            <div className='w-4/6 h-2/3 border px-4 py-2 rounded-xl  text-neutral-50 mt-6 flex flex-col gap-2'>
+                
             </div>
-          
-
         </section>
     );
 }

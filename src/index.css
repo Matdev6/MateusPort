@@ -17,15 +17,39 @@ html {
 
 .img-fundo {
   background-image: url(assets/a.png);
-  background-size: cover; /* Faz a imagem cobrir todo o elemento */
-  background-repeat: no-repeat; /* Evita repetição */
-  background-position: center; /* Centraliza a imagem */
-  width: 100vw; /* Define a largura como 100% da largura da viewport */
-  height: calc(100vh - 80px); /* Define a altura como 100% da altura da viewport */
+  background-size: cover;
+  /* Faz a imagem cobrir todo o elemento */
+  background-repeat: no-repeat;
+  /* Evita repetição */
+  background-position: center;
+  /* Centraliza a imagem */
+  width: 100vw;
+  /* Define a largura como 100% da largura da viewport */
+  height: calc(100vh - 80px);
+  /* Define a altura como 100% da altura da viewport */
 }
 
 
-.fundo{
+.fundo {
   background: linear-gradient(270deg, #1f1f1f, #2e2e2e, #1f1f1f);
   animation: pulseGradient 10s infinite linear;
+}
+
+.bg-svg {
+  background: url("assets/bg-mobile.svg") no-repeat center center;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .bg-svg {
+    background: url("assets/bg-tablet.svg") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1280px){
+  .bg-svg{
+    background: url("assets/bg.svg") no-repeat center center;
+    background-size: cover;
+  }
 }

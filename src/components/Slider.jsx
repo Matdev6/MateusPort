@@ -17,25 +17,18 @@ export default function Slider() {
         centeredSlides={true}
         slidesPerView="auto"
         spaceBetween={-80} // espaço negativo pra aparecer os lados
-        initialSlide={1}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
+        initialSlide={0}
         pagination={{ clickable: true }}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[EffectCoverflow, Pagination, ]}
         className="mySwiper"
       >
         {[1, 2, 3].map((item) => (
           <SwiperSlide
             key={item}
-            className="!w-[80vw] sm:!w-[60vw] md:!w-[40vw] lg:!w-[35vw] xl:!w-[30vw]"
+            className="h-max w-max"
           >
             <div className="flex justify-center items-center flex-col gap-12">
-              <div className="bg-neutral-900 border-2 border-cyan-300/60 p-4 rounded-2xl hover:scale-90 transition shadow-lg">
+              <div className="bg-neutral-900 border-2 border-cyan-300/60 p-4 rounded-2xl  transition shadow-lg">
                 <img src={projeto1} alt="projeto" className="rounded-lg mb-4 w-full" />
                 <h3 className="text-xl text-white font-semibold">GhostLab</h3>
                 <p className="text-sm text-gray-300 mt-2">
