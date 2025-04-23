@@ -1,4 +1,4 @@
-import { ArrowDown, Code, CodeXml, LucideLaptop, Notebook } from "lucide-react";
+import { ArrowDown, Code, CodeXml, GitBranch, Github, Linkedin, LinkedinIcon, LucideLaptop, Notebook, Twitter } from "lucide-react";
 import mateus from "../assets/mateus.jpeg"
 import eu from "../assets/eu.png"
 
@@ -42,8 +42,8 @@ export default function Hero() {
                 initial={{ x: -300, opacity: 0 }}
                 transition={{ duration: 1 }}
                 whileInView={{ x: 0, opacity: 1 }}
-                className="flex flex-col text-center sm:w-1/2 w-full  sm:h-full justify-center">
-                <div className="flex flex-col justify-center items-center bg-neutral-200 sm:w-11/12 w-full h-full ">
+                className="flex flex-col text-center sm:w-1/2 w-full h-full justify-center">
+                <div className="flex flex-col justify-center  items-center bg-neutral-200 sm:w-11/12 w-full h-full ">
                     <img
                         src={eu}
                         alt="Mateus"
@@ -64,18 +64,25 @@ export default function Hero() {
                 </div>
 
             </motion.div>
-            <div className="sm:w-1/3 w-11/12 h-1/2 justify-center flex flex-col">
+            <div className="sm:w-1/3 w-11/12 h-full justify-center flex flex-col ml-8">
                 <h1 className="text-cyan-500 font-bold sm:text-5xl text-2xl text-center sm:mt-0 sm:text-start">Transformando Ideias em Experiências Web Incríveis</h1>
                 <p className="text-neutral-500 sm:text-xl text-md text-center sm:text-start my-6">Desenvolvedor Front-End com foco em criar interfaces web responsivas e dinâmicas. Dedicado a entregar soluções que combinam estética e funcionalidade para uma ótima experiência do usuário.</p>
-                <div className="flex  sm:flex-row gap-3   mt-2 sm:mt-0 mx-auto sm:mx-0 ">
-                    <button className="bg-cyan-500 text-neutral-100 p-2 sm:p-3  font-semibold text-md rounded-3xl">
+                <div className="flex  sm:flex-row gap-3   mt-2 sm:mt-1 mx-auto sm:mx-0">
+                    <button className="bg-cyan-500 border-cyan-800 text-neutral-100 p-2 sm:p-3  font-semibold text-md rounded-3xl">
                         Entrar em contato
                     </button>
-                    <button className="bg-neutral-900 text-neutral-200 p-2 sm:p-3 text-md rounded-3xl font-semibold">
+                    <button className="border border-neutral-900 text-neutral-900 p-2 sm:p-3 text-md rounded-3xl font-medium hover:bg-neutral-100">
                         Baixar curriculo
                     </button>
+                  
                 </div>
-
+                <div className="absolute right-5 bottom-4 sm:flex hidden flex-col items-center justify-center gap-4">
+                        <div className="relative animate-pulse border-2 h-[51dvh] border-cyan-500 rounded-2xl"></div>
+                        <Github className=" text-neutral-50 fill-white bg-neutral-900 h-8 w-8 pt-[6px] rounded-full" />
+                        <Linkedin className="fill-white text-transparent bg-blue-600 p-[3px] h-8 w-8 rounded-md" />
+                        <Twitter className="fill-cyan-500 text-cyan-500" />
+                        <div className="relative animate-pulse border-2 h-[20dvh] border-cyan-500 rounded-2xl"></div>
+                    </div>
             </div>
         </section>
     );

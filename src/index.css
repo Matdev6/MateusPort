@@ -16,7 +16,7 @@ html {
 }
 
 .img-fundo {
-  background-image: url(assets/a.png);
+  background-image: url(assets/oc.png);
   background-size: cover;
   /* Faz a imagem cobrir todo o elemento */
   background-repeat: no-repeat;
@@ -47,9 +47,21 @@ html {
   }
 }
 
-@media (min-width: 1280px){
-  .bg-svg{
+@media (min-width: 1280px) {
+  .bg-svg {
     background: url("assets/bg.svg") no-repeat center center;
     background-size: cover;
   }
+}
+
+.bg-grid {
+  background-image: linear-gradient(to right, #e0e0e0 1px, transparent 1px),
+    linear-gradient(to bottom, #e0e0e0 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-graph {
+  background-image: linear-gradient(to right, #d4d4d4 1px, transparent 1px),
+    linear-gradient(to bottom, #d4d4d4 1px, transparent 1px);
+  background-size: 25px 25px;
 }

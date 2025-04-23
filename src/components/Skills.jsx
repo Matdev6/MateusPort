@@ -17,7 +17,7 @@ const Skills = () => {
     };
 
     return (
-        <section className="altura-tela scroll-mt-20 w-screen bg-gradient-to-t to-neutral-950 via-neutral-800 from-[#48a2ad] flex flex-col" id="section3">
+        <section className="altura-tela scroll-mt-20 w-screen flex flex-col" id="section3">
             <div className="flex flex-wrap justify-center items-center">
                 <div className="flex my-8 w-max items-center text-white justify-center gap-4 bg-[#67E8F9] py-1 px-2 rounded-2xl shadow-[0_0_8px_4px_#67E8F9]">
                     <h1 className="text-2xl font-semibold border-b-2  border-[#67E8F9] ml-4 text-neutral-800">Habilidades</h1>
@@ -36,7 +36,7 @@ const Skills = () => {
                         <div
                             key={index}
                             onClick={() => handleCardClick(card.info, card.img, card.title)}
-                            className="border-b-2 rounded-tl-2xl h-32 w-32  border-[#67E8F9] bg-neutral-800   text-white flex flex-col justify-evenly items-center cursor-pointer hover:scale-105 transition-transform"
+                            className="border-b-2 rounded-tl-2xl h-32 w-32  border-[#67E8F9] bg-neutral-200   text-white flex flex-col justify-evenly items-center cursor-pointer hover:scale-105 transition-transform"
                         >
                             <img src={card.img} alt={card.title} className="h-12 w-12" />
                             <h1 className="text-xl text-[#67E8F9] font-semibold">{card.title}</h1>
