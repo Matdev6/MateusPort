@@ -5,7 +5,7 @@ export default function Projects() {
     return (
         <section
             id="section4"
-            className="altura-tela w-screen scroll-mt-20 bg-svg  overflow-hidden flex flex-col  items-center "
+            className="altura-tela w-screen scroll-mt-20 bg-neutral-100  flex flex-col  items-center "
         >
 
             {/* CONTEÚDO */}

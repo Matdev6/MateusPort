@@ -10,7 +10,7 @@ import docker from "../assets/docker.png"
 
 const cards = [
         {
-            img: html, // ou o import real
+            img: html,
             title: "HTML",
             info: "Linguagem de marcação responsável por estruturar o conteúdo das páginas web. É a base de qualquer site.",
         },
