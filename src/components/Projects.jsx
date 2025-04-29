@@ -1,22 +1,110 @@
-import Slider from './Slider';
+import quadriculado from "../assets/quadriculado.svg";
 import projeto1 from "../assets/projeto1.jpeg";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from 'swiper/modules';
+import projects from "./projectsData";
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
+import { ArrowLeft, ArrowRight, FastForward } from "lucide-react";
+import ProjectSlide from "./ProjectSlide";
+import { useState } from "react";
+import Modal from "./Modal";
+
 
 export default function Projects() {
+
+    const [openModal, setOpenModal] = useState(false)
+    const [selectedProject, setSelectedProject] = useState(null);
+
     return (
         <section
             id="section4"
-            className="altura-tela w-screen scroll-mt-20 bg-neutral-100  flex flex-col  items-center "
+            className="relative sm:h-[calc(100vh-80px)] min-h-max h-max scroll-mt-20 w-screen flex flex-col items-center 
+                 bg-white bg-no-repeat bg-center bg-cover"
+            style={{ backgroundImage: `url(${quadriculado})` }}
         >
-
-            {/* CONTEÚDO */}
-            <div className='flex w-full '>
-                <h1 className="my-12 text-2xl sm:text-2xl w-3/6 flex justify-center  md:text-3xl font-bold text-[]">
+            <div className="w-3/4 text-center mt-16 mb-8">
+                <h1 className="sm:text-4xl text-3xl font-extrabold text-cyan-500 underline">
                     Confira Meus Projetos
                 </h1>
+                <p className="mt-3 sm:text-2xl text-xl font-medium text-neutral-600">
+                    Clique em cada projeto para saber detalhes e tecnologias usadas.
+                </p>
             </div>
-            <div className='w-4/6 h-2/3 border px-4 py-2 rounded-xl  text-neutral-50 mt-6 flex flex-col gap-2'>
-                
+
+            <div className="relative flex items-center justify-center w-4/5 md:w-2/3 lg:w-2/5 h-auto border  rounded-2xl shadow-lg mb-8">
+                {/* Botão anterior */}
+                <button className="custom-prev absolute sm:left-[-3.5rem] left-[-2.5rem] top-1/2 -translate-y-1/2 z-10 border border-cyan-600 animate-bounce text-cyan-600 sm:p-2 p-1 rounded-full hover:bg-opacity-75 hover:bg-cyan-100 ">
+                    <ArrowLeft />
+                </button>
+
+                <Swiper
+                    slidesPerView={1}
+                    pagination={{ clickable: true }}
+                    navigation={{
+                        prevEl: '.custom-prev',
+                        nextEl: '.custom-next',
+                    }}
+                    modules={[Navigation]}
+                    className="mySwiper w-full"
+                >
+                    {projects.map((project, index) =>
+                        <SwiperSlide key={index}>
+                            <ProjectSlide
+                                click={() => {
+                                    setSelectedProject({
+                                        img1: project.img1,
+                                        img2: project.img2,
+                                        title: project.title,
+                                        description: project.descriptionModal,
+                                        tec: project.tecs
+                                    });
+                                    setOpenModal(true);
+                                }}
+                                img={project.img1}
+                                title={project.title}
+                                description={project.description}
+                                tec={project.tecs}
+                            />
+                        </SwiperSlide>)}
+                </Swiper>
+
+
+
+                {/* Botão próximo - corrigido para custom-next */}
+                <button className="custom-next absolute sm:right-[-3.5rem] right-[-2.5rem] top-1/2 -translate-y-1/2 z-10 border border-cyan-600 animate-bounce text-cyan-600 sm:p-2 p-1 rounded-full hover:bg-opacity-75 hover:bg-cyan-100">
+                    <ArrowRight />
+                </button>
             </div>
+            {openModal && selectedProject && (
+                <Modal onClose={() => setOpenModal(false)} open={openModal}>
+                    <div className="flex flex-col gap-4">
+                        <Swiper
+                            slidesPerView={1}
+                            navigation
+                            className="w-full">
+                            <SwiperSlide>
+                                <img src={selectedProject.img1} alt={selectedProject.title} className="w-full rounded-lg" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={selectedProject.img2} alt={selectedProject.title} className="w-full rounded-lg" />
+                            </SwiperSlide>
+                        </Swiper>
+                        <h1 className="text-xl font-bold">{selectedProject.title}</h1>
+                        <p className="text-neutral-700">{selectedProject.description}</p>
+                        <div className="flex flex-wrap gap-2 mt-2">
+                            {selectedProject.tec.map((item) => (
+                                <span key={item} className="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm font-semibold">
+                                    {item}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+                </Modal>
+            )}
+
         </section>
     );
 }

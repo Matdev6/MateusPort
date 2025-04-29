@@ -7,9 +7,29 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* src/index.css */
+
+::-webkit-scrollbar {
+  width: 10px; /* largura da barra */
+}
+
+::-webkit-scrollbar-track {
+  background: #000000; /* fundo da barra */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #06B6D4; /* cor do 'polegar' (scroll) */
+  border-radius: 15px;
+  border: 2px solid #000000; /* opcional, para dar um espacinho */
+}
+
+/* Firefox também tem suporte mas com outro seletor */
 html {
+  scrollbar-width: thin;
+  scrollbar-color: #06b6d4 #ffffff;
   scroll-behavior: smooth;
 }
+
 
 .altura-tela {
   height: calc(100vh - 80px);
@@ -65,3 +85,4 @@ html {
     linear-gradient(to bottom, #d4d4d4 1px, transparent 1px);
   background-size: 25px 25px;
 }
+

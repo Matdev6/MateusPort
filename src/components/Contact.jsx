@@ -10,7 +10,7 @@ export default function Contact() {
             className="sm:h-[calc(100vh-80px)] scroll-mt-20 bg-neutral-100"
             id="section5"
         >
-            <div className="flex w-full h-full flex-col sm:flex-row">
+            <div className="flex w-full h-full flex-col-reverse sm:flex-row">
                 {/* MODELO 3D */}
                 <motion.div
  
@@ -48,7 +48,7 @@ export default function Contact() {
                 </motion.div>
 
                 {/* CONTATOS */}
-                <div className="sm:w-1/2 h-full flex flex-col justify-center items-start gap-6 px-8">
+                <div className="sm:w-1/2 h-full flex flex-col justify-center items-start gap-6 px-8 mt-8 sm:mt-0">
                     <h1 className="text-4xl font-semibold text-cyan-600">
                         Contato & Redes
                     </h1>
