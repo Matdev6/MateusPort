@@ -1,16 +1,16 @@
+import { useState } from "react";
 import quadriculado from "../assets/quadriculado.svg";
-import projeto1 from "../assets/projeto1.jpeg";
+import projects from "./projectsData";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import ProjectSlide from "./ProjectSlide";
+import Modal from "./Modal";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from 'swiper/modules';
-import projects from "./projectsData";
+
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
-import { ArrowLeft, ArrowRight, FastForward } from "lucide-react";
-import ProjectSlide from "./ProjectSlide";
-import { useState } from "react";
-import Modal from "./Modal";
 
 
 export default function Projects() {
@@ -34,7 +34,7 @@ export default function Projects() {
                 </p>
             </div>
 
-            <div className="relative flex items-center justify-center w-4/5 md:w-2/3 lg:w-2/5 h-auto border  rounded-2xl shadow-lg mb-8">
+            <div className="relative flex items-center justify-center w-4/5 md:w-2/3 lg:w-2/5  h-auto min-h-[400px] border  rounded-2xl shadow-lg mb-8">
                 {/* Botão anterior */}
                 <button className="custom-prev absolute sm:left-[-3.5rem] left-[-2.5rem] top-1/2 -translate-y-1/2 z-10 border border-cyan-600 animate-bounce text-cyan-600 sm:p-2 p-1 rounded-full hover:bg-opacity-75 hover:bg-cyan-100 ">
                     <ArrowLeft />
@@ -55,15 +55,14 @@ export default function Projects() {
                             <ProjectSlide
                                 click={() => {
                                     setSelectedProject({
-                                        img1: project.img1,
-                                        img2: project.img2,
+                                        imgs: project.img,
                                         title: project.title,
                                         description: project.descriptionModal,
                                         tec: project.tecs
                                     });
                                     setOpenModal(true);
                                 }}
-                                img={project.img1}
+                                img={project.img[0]}
                                 title={project.title}
                                 description={project.description}
                                 tec={project.tecs}
@@ -81,16 +80,16 @@ export default function Projects() {
             {openModal && selectedProject && (
                 <Modal onClose={() => setOpenModal(false)} open={openModal}>
                     <div className="flex flex-col gap-4">
+                    <h1 className="mx-auto">Deslize para ver as imagens do projeto</h1>
                         <Swiper
                             slidesPerView={1}
                             navigation
                             className="w-full">
-                            <SwiperSlide>
-                                <img src={selectedProject.img1} alt={selectedProject.title} className="w-full rounded-lg" />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <img src={selectedProject.img2} alt={selectedProject.title} className="w-full rounded-lg" />
-                            </SwiperSlide>
+                            {selectedProject.imgs.map((img) =>
+                                <SwiperSlide key={img}>
+                                    <img src={img} alt={selectedProject.title} className="w-full rounded-lg" />
+                                </SwiperSlide>
+                            )}
                         </Swiper>
                         <h1 className="text-xl font-bold">{selectedProject.title}</h1>
                         <p className="text-neutral-700">{selectedProject.description}</p>

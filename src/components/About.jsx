@@ -17,7 +17,7 @@ export default function About() {
 
                     <Card
                         title={"Como comecei na Progamação?"}
-                        text={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae perspiciatis et laudantium? Voluptates aliquam ullam iste vitae, unde hic, sed ipsa impedit quam atque reprehenderit ipsum saepe animi, exercitationem velit!"}
+                        text={"Comecei na programação em fevereiro de 2024, quando tive a oportunidade de ter aulas com o desenvolvedor da empresa onde eu trabalhava. Durante dois meses, ele me apresentou os fundamentos da área, o que despertou meu interesse pela programação. Desde então, venho estudando de forma autodidata por meio de cursos e vídeo aulas, sempre praticando e me dedicando com foco no desenvolvimento frontend."}
                         size={"large"}
                         icon={<LucideLaptop className="sm:h-9 sm:w-9 h-10 w-10 p-1 rounded-full" />}
                         x={-300}

@@ -10,7 +10,7 @@ export default function Card({ title, text, size, icon, x }) {
             className={`
                 ${size === "large" ? "sm:w-3/5" : "sm:w-2/5"}
                 w-full sm:h-full h-fit max-h-full border-2 border-cyan-500 
-                shadow-2xl bg-neutral-100 rounded-2xl flex p-8 flex-col
+                shadow-2xl bg-neutral-100 rounded-2xl flex sm:p-5 p-8 flex-col
             `}
         >
             <div className="flex justify-between items-center text-neutral-700 text-xl sm:text-2xl">

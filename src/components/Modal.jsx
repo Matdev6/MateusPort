@@ -9,7 +9,7 @@ export default function Modal({ children, onClose }) {
         >
             <div
                 onClick={(e) => e.stopPropagation()}
-                className="bg-white p-6 rounded-xl shadow-xl sm:w-3/5 w-11/12 "
+                className="bg-white px-6 py-3 rounded-xl shadow-xl sm:w-3/5 w-11/12 "
             >
                 <div className="flex justify-between">
                     <span></span>
