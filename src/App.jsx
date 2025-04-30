@@ -8,27 +8,29 @@ function App() {
   useEffect(() => {
     const handleLoaded = () => {
       setIsLoaded(true)
-    };
+    }
 
     window.addEventListener('load', handleLoaded)
 
-    return() => {
+    return () => {
       window.removeEventListener('load', handleLoaded)
     }
-
   }, [])
 
-  if(!isLoaded) {
-    return <div className="">Carregando...</div>
+  if (!isLoaded) {
+    return (
+      <div className="flex items-center justify-center h-screen bg-black text-white text-xl">
+        Carregando...
+      </div>
+    )
   }
 
   return (
-    <div className="overflow-hidden scrollbar-thin scrollbar-thumn-cyan-500 scrollbar-track">
+    <div className="overflow-hidden scrollbar-thin scrollbar-thumb-cyan-500 scrollbar-track">
       <Header />
-      {/* <Login /> */}
       <Home />
     </div>
-      )
+  )
 }
 
-      export default App
+export default App
