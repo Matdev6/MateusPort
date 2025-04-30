@@ -20,7 +20,7 @@
     "react-hook-form": "^7.54.2",
     "swiper": "^11.2.6",
     "tailwind-scrollbar": "^3.0.4",
-    "three": "^0.150.1",
+    "three": "^0.176.0",
     "three-mesh-bvh": "^0.8.0"
   },
   "devDependencies": {
