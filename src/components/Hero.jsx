@@ -40,7 +40,7 @@ export default function Hero() {
                         className="w-44 h-64 sm:w-[267px] sm:h-[405px] mt-8 sm:mt-0 rounded-[38%_70%_60%_40%_/_30%_30%_70%_70%] border-cyan-200 p-1 bg-neutral-400"
                     />
                     <h1 className="sm:text-3xl text-2xl font-bold mt-6 text-neutral-800">Bem-vindo ao meu portfólio</h1>
-                    <p className="sm:text-2xl text-xl font-semibold text-neutral-300 mb-1">
+                    <p className="sm:text-2xl text-xl font-semibold text-neutral-600 mb-1">
                         <span className="text-cyan-500">Mateus Bernardo</span> Dev FrontEnd
                     </p>
                     <p className="text-gray-600 text-sm mb-4">© {anoAtual} matDev</p>
