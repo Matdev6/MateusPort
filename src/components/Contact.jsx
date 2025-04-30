@@ -61,7 +61,7 @@ export default function Contact() {
                             icon={<Mail className="w-5 h-5" />}
                             label="Email"
                             value="mateusousa123@hotmail.com"
-                            href="mailto:mateus@email.com"
+                            href="mailto:mateusousa123@hotmail.com"
                         />
                         <ContactLink
                             icon={<Phone className="w-5 h-5" />}
@@ -72,8 +72,8 @@ export default function Contact() {
                         <ContactLink
                             icon={<Linkedin className="w-5 h-5" />}
                             label="LinkedIn"
-                            value="/in/mateusdev"
-                            href="https://linkedin.com/in/mateusdev"
+                            value="/in/mateus-bernardo-38542533a"
+                            href="https://www.linkedin.com/in/mateus-bernardo-38542533a/"
                         />
                         <ContactLink
                             icon={<Github className="w-5 h-5" />}
@@ -85,7 +85,7 @@ export default function Contact() {
                             icon={<Instagram className="w-5 h-5" />}
                             label="Instagram"
                             value="@mateus.b6"
-                            href="https://instagram.com/mateus.studio"
+                            href="https://www.instagram.com/mateus.b6/"
                         />
                     </div>
                 </div>
