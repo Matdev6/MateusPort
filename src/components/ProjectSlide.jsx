@@ -14,7 +14,7 @@ export default function ProjectSlide({ img, title, description, tec, click }) {
                 />
             </div>
             <h1>{title}</h1>
-            <p className="text-neutral-700">
+            <p className="text-neutral-700 text-sm md:text-lg">
                 {description}
             </p>
             <div className="flex flex-wrap gap-2">

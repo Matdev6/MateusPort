@@ -35,7 +35,7 @@ export default function Projects() {
             </div>
 
             <div className="relative flex items-center justify-center w-4/5 md:w-2/3 lg:w-2/5  h-auto min-h-[400px] border  rounded-2xl shadow-lg mb-8">
-                {/* Botão anterior */}
+
                 <button className="custom-prev absolute sm:left-[-3.5rem] left-[-2.5rem] top-1/2 -translate-y-1/2 z-10 border border-cyan-600 animate-bounce text-cyan-600 sm:p-2 p-1 rounded-full hover:bg-opacity-75 hover:bg-cyan-100 ">
                     <ArrowLeft />
                 </button>
@@ -48,7 +48,7 @@ export default function Projects() {
                         nextEl: '.custom-next',
                     }}
                     modules={[Navigation]}
-                    className="mySwiper w-full"
+                    className="mySwiper w-full bg-white rounded-xl"
                 >
                     {projects.map((project, index) =>
                         <SwiperSlide key={index}>
@@ -80,7 +80,7 @@ export default function Projects() {
             {openModal && selectedProject && (
                 <Modal onClose={() => setOpenModal(false)} open={openModal}>
                     <div className="flex flex-col gap-4">
-                    <h1 className="mx-auto">Deslize para ver as imagens do projeto</h1>
+                        <h1 className="mx-auto">Deslize para ver as imagens do projeto</h1>
                         <Swiper
                             slidesPerView={1}
                             navigation
