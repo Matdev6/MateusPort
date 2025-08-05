@@ -25,21 +25,27 @@ const projects = [
         title: "Eugenio Engenharia",
         description: "Este projeto visa criar uma landing page moderna e eficaz para a Eugenio Engenharia, uma empresa líder em soluções de segurança do trabalho. O principal objetivo é gerar novos leads qualificados e consolidar a presença online da empresa.",
         descriptionModal: "Este projeto visa o desenvolvimento de uma landing page para a Eugenio Engenharia, com o objetivo de capturar leads qualificados. A página terá um design responsivo e profissional, destacando os serviços da empresa e utilizando chamadas para ação (CTAs) claras e um formulário de contato. A estrutura será otimizada com técnicas de SEO para garantir visibilidade nos motores de busca, atraindo tráfego orgânico e convertendo visitantes em potenciais clientes.",
-        tecs: ['React', "Tailwind", "Typescript"]
+        tecs: ['React', "Tailwind", "Typescript"],
+        deploy : "https://www.eugenioengenharia.com.br/",
+        git: "https://github.com/Matdev6/AstroEugenioEngenharia"
     },
     {
         img: [corteFacil, corteFacil2, corteFacil3, corteFacil4, corteFacil5, corteFacil6, corteFacil7, corteFacil8],
         title: "Corte Facil",
         description: "Agende seu horário com facilidade — escolha o serviço, data e hora, preencha seus dados e pronto! Gerencie tudo no painel administrativo.",
         descriptionModal: "Projeto de agendamento para barbearia, onde o cliente escolhe o serviço (corte, barba ou corte e barba), data e horário, preenche nome e telefone e confirma o agendamento. Conta também com painel administrativo onde podemos consultar os agendamentos e configurar os serviço e horario de funcionamento de acordo com a necessidade de co cliente.",
-        tecs: ['React', 'Tailwind', 'Node', 'PostgreSql', 'Docker']
+        tecs: ['React', 'Tailwind', 'Node', 'PostgreSql', 'Docker'],
+        deploy: 'https://corte-facil-byup.vercel.app/',
+        git : 'https://github.com/Matdev6/CorteFacil'
     },
     {
         img: [ghostlab, ghostlab2],
         title: "GhostLab",
         description: "Projeto de um estúdio musical onde os usuários podem explorar os serviços oferecidos, ouvir beats disponíveis para venda e, por meio de um painel administrativo, adicionar, editar e remover beats",
         descriptionModal: "Teste descrição Modal",
-        tecs: ['React', 'Tailwind', 'FastApi', 'PostgreSql']
+        tecs: ['React', 'Tailwind', 'FastApi', 'PostgreSql'],
+        deploy : '',
+        git: ''
     },
 
 ]

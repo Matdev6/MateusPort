@@ -1,4 +1,4 @@
-export default function ProjectSlide({ img, title, description, tec, click }) {
+export default function ProjectSlide({ img, title, description, tec, click, deploy, git }) {
     return (
         <div
             onClick={click}
@@ -31,13 +31,13 @@ export default function ProjectSlide({ img, title, description, tec, click }) {
 
             <div className="flex flex-wrap gap-2">
                 <a
-                    href="#"
+                    href={deploy}
                     className="bg-neutral-900 text-white px-4 py-1 rounded-full text-sm font-semibold"
                 >
                     Deploy
                 </a>
                 <a
-                    href="#"
+                    href={git}
                     className="bg-neutral-900 text-white px-4 py-1 rounded-full text-sm font-semibold"
                 >
                     Github

@@ -58,7 +58,9 @@ export default function Projects() {
                                         imgs: project.img,
                                         title: project.title,
                                         description: project.descriptionModal,
-                                        tec: project.tecs
+                                        tec: project.tecs,
+                                        deploy: project.deploy,
+                                        git: project.git
                                     });
                                     setOpenModal(true);
                                 }}
@@ -66,6 +68,8 @@ export default function Projects() {
                                 title={project.title}
                                 description={project.description}
                                 tec={project.tecs}
+                                deploy={project.deploy}
+                                git={project.git}
                             />
                         </SwiperSlide>)}
                 </Swiper>
@@ -99,6 +103,22 @@ export default function Projects() {
                                     {item}
                                 </span>
                             ))}
+                        </div>
+                        <div className="flex flex-wrap gap-2">
+                            <a
+                                href={selectedProject.deploy}
+                                target="_blank"
+                                className="bg-neutral-900 text-white px-4 py-1 rounded-full text-sm font-semibold"
+                            >
+                                Deploy
+                            </a>
+                            <a
+                                href={selectedProject.git}
+                                target="_blank"
+                                className="bg-neutral-900 text-white px-4 py-1 rounded-full text-sm font-semibold"
+                            >
+                                Github
+                            </a>
                         </div>
                     </div>
                 </Modal>
