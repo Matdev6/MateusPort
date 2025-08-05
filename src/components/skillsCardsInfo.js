@@ -41,8 +41,8 @@ const cards = [
         },
         {
             img: node,
-            title: "FastApi",
-            info: "Framework web para APIs em Python, focado em desempenho, tipagem e facilidade de uso com suporte ao async.",
+            title: "Node",
+            info: "Ambiente de execução JavaScript no lado do servidor, conhecido por sua performance assíncrona e uso em APIs e aplicações web escaláveis."
         },
         {
             img: docker,

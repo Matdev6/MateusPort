@@ -10,6 +10,14 @@ import eugenio3 from "../assets/eugenio3.png"
 import eugenio4 from "../assets/eugenio4.png"
 import eugenio5 from "../assets/eugenio5.png"
 import eugenio6 from "../assets/eugenio6.png"
+import corteFacil from "../assets/corteFacil/corteFacil.png"
+import corteFacil2 from "../assets/corteFacil/corteFacil2.png"
+import corteFacil3 from "../assets/corteFacil/corteFacil3.png"
+import corteFacil4 from "../assets/corteFacil/corteFacil4.png"
+import corteFacil5 from "../assets/corteFacil/corteFacil5.png"
+import corteFacil6 from "../assets/corteFacil/corteFacil6.png"
+import corteFacil7 from "../assets/corteFacil/corteFacil7.png"
+import corteFacil8 from "../assets/corteFacil/corteFacil8.png"
 
 const projects = [
     {
@@ -20,19 +28,20 @@ const projects = [
         tecs: ['React', "Tailwind", "Typescript"]
     },
     {
+        img: [corteFacil, corteFacil2, corteFacil3, corteFacil4, corteFacil5, corteFacil6, corteFacil7, corteFacil8],
+        title: "Corte Facil",
+        description: "Agende seu horário com facilidade — escolha o serviço, data e hora, preencha seus dados e pronto! Gerencie tudo no painel administrativo.",
+        descriptionModal: "Projeto de agendamento para barbearia, onde o cliente escolhe o serviço (corte, barba ou corte e barba), data e horário, preenche nome e telefone e confirma o agendamento. Conta também com painel administrativo onde podemos consultar os agendamentos e configurar os serviço e horario de funcionamento de acordo com a necessidade de co cliente.",
+        tecs: ['React', 'Tailwind', 'Node', 'PostgreSql', 'Docker']
+    },
+    {
         img: [ghostlab, ghostlab2],
         title: "GhostLab",
         description: "Projeto de um estúdio musical onde os usuários podem explorar os serviços oferecidos, ouvir beats disponíveis para venda e, por meio de um painel administrativo, adicionar, editar e remover beats",
         descriptionModal: "Teste descrição Modal",
         tecs: ['React', 'Tailwind', 'FastApi', 'PostgreSql']
     },
-    {
-        img: [agendaBarbearia, agendaBarbearia2, agendaBarbearia3, agendaBarbearia4],
-        title: "Agenda Barbearia",
-        description: "Agende seu horário com facilidade — escolha o serviço, data e hora, preencha seus dados e pronto! Gerencie tudo no painel administrativo.",
-        descriptionModal: "Projeto simples de agendamento para barbearia, onde o cliente escolhe o serviço (corte, barba ou corte e barba), data e horário, preenche nome e telefone e confirma o agendamento. Conta também com painel administrativo para adicionar, editar e remover serviços.",
-        tecs: ['React', 'Tailwind', 'FastApi', 'PostgreSql']
-    }
+
 ]
 
 export default projects
