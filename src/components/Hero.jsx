@@ -1,5 +1,5 @@
 import { ArrowDown, Github, Linkedin, Twitter } from "lucide-react";
-import eu from "../assets/eu.png";
+import mateus from "../assets/mateus.png";
 import { motion } from "framer-motion";
 
 export default function Hero() {
@@ -34,11 +34,16 @@ export default function Hero() {
                 className="flex flex-col items-center sm:items-center text-center sm:text-left sm:w-1/2 w-full h-full justify-center"
             >
                 <div className="flex flex-col justify-center items-center bg-neutral-200 py-10  w-full h-full px-4 sm:px-0">
-                    <img
-                        src={eu}
-                        alt="Mateus"
-                        className="w-44 h-64 sm:w-[267px] sm:h-[405px] mt-8 sm:mt-0 rounded-[38%_70%_60%_40%_/_30%_30%_70%_70%] border-cyan-200 p-1 bg-neutral-400"
-                    />
+<img
+  src={mateus}
+  alt="Mateus"
+  className="w-44 h-64 sm:w-[267px] sm:h-[320px] rounded-3xl 
+             object-cover object-center
+             p-[3px] bg-gradient-to-r from-[#06B6D4] via-cyan-400 to-blue-500 
+             shadow-lg shadow-blue-500/40
+             hover:scale-105 transition-transform duration-300"
+/>
+
                     <h1 className="sm:text-3xl text-2xl font-bold mt-6 text-neutral-800">Bem-vindo ao meu portfólio</h1>
                     <p className="sm:text-2xl text-xl font-semibold text-neutral-600 mb-1">
                         <span className="text-cyan-500">Mateus Bernardo</span> Dev FrontEnd
